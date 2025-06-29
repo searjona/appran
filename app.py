@@ -76,7 +76,7 @@ if menu == "Análisis de Masivas":
     from datetime import datetime
 
     # Archivos en columnas
-    st.title("📊 Análisis de Sitios Afectados por Energía ⚡")
+    st.markdown("<h2 style='text-align: center;'>📊 Análisis de Sitios Afectados por Energía ⚡</h2>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
         archivo_base = st.file_uploader("📂 Sube el archivo base (Excel)", type="xlsx", key="base_masiva")
